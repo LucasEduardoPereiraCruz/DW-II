@@ -15,13 +15,24 @@
         <input type="text" id="sobrenome" placeholder="Entre com o seu Sobrenome" tabindex="2" />  
     </form>
     <button id="juntar" onclick="juntarNome()" tabindex="3">
-        Juntar
+        <i class="fa fa-plus"></i> Juntar
     </button>
+
+   <!-- deixando o icone em cima da palavra
+     <button id="juntar" onclick="juntarNome()" tabindex="3">
+        <div><i class="fa fa-plus"></i> <br>
+            <span> Juntar</span>
+        </div>   
+    </button>
+   -->
 
     <hr />
     <br />
     <p>Nome Completo: (InnerText) </p>
     <p id="nomecompleto">Vai aparecer o nomecompleto. </p> 
+
+    <p>Nome Completo: (InnerHTML) </p>
+    <p id="nomecompleto1">Vai aparecer o nomecompleto. </p>
 
     <script src="js/utilidades.js"></script>
 
