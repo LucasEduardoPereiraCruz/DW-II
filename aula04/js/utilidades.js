@@ -19,6 +19,17 @@ function juntarNome(){
     //4. Executar a injeção de tags (elementos HTML) + textos
     document.getElementById("nomecompleto1").innerHTML = nomecompleto1;
 
-    
 }
 
+function janelaNome(){
+    let nome = prompt("Entre com seu nome", "Exemplo: Carlos Oliveira");
+    let sobrenome = prompt("Entre com seu sobrenome", "Exemplo: Oliveira");
+
+    if(nome != null && sobrenome != null){
+        //2. Uso da interpolação strings (template strings)
+        let nomecompleto1 = `<i>${nome} <br>${sobrenome}</i>`;
+    }else{
+        document.writeln("<p><strong>Nome e/ou sobrenome não foram informados!!!</strong></p>");
+    }
+
+}
